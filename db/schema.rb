@@ -45,6 +45,19 @@ ActiveRecord::Schema.define(version: 20131201195027791) do
   add_index "businesses", ["slug"], name: "index_businesses_on_slug", unique: true, using: :btree
   add_index "businesses", ["user_id"], name: "index_businesses_on_user_id", using: :btree
 
+  create_table "customers", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "address"
+    t.text     "interest"
+    t.string   "profession"
+    t.string   "company"
+    t.text     "current"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "deal_shop_assocs", force: true do |t|
     t.integer "deal_id"
     t.integer "shop_id"

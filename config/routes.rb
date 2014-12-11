@@ -1,5 +1,7 @@
 LoveAndLaugh::Application.routes.draw do
 
+  resources :customers
+
   get "static_pages/home"
   get "static_pages/contact"
   get "static_pages/about"
