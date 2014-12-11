@@ -2,30 +2,48 @@
   .large-12.columns
     .row
       .large-12.columns
-        %img{:alt => "slide 1", :src => "http://placehold.it/1000x300/A92B48/fff"}/
+        = link_to image_tag("home-page.png", :border => 0, :width => 1000, :height => 100), static_pages_home_path
+        -#%img{:alt => "slide 1", :src => "http://placehold.it/1000x300/A92B48/fff"}/
         %hr/
-    %hr/
 .row
   .large-4.columns
-    %img{:src => "http://placehold.it/400x300&text=[img]"}/
-    %h4 This is a content section.
-    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+    .panel{ :style => "background-color: #3ea1b0; color: white;" }
+      %h4{ :style => "color: white;" }
+        Core Programming
+      %ul
+        %li Data Structures
+        %li C Programing
+        %li C++ Programming
+        %li Java Programming
+        %li Ruby Programming
+
   .large-4.columns
-    %img{:src => "http://placehold.it/400x300&text=[img]"}/
-    %h4 This is a content section.
-    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+    .panel{ :style => "background-color: #3ea1b0; color: white;" }
+      %h4{ :style => "color: white;" }
+        Advanced Web Programming
+      %ul
+        %li Advanced Java Programming
+        %li Web Development with Spring Technology
+        %li Ruby Programming
+        %li Ruby on Rails Programming
+        %li Angular Js
+        %li Javascript
+        %li Front end web development for mobile devices
+
   .large-4.columns
-    %img{:src => "http://placehold.it/400x300&text=[img]"}/
-    %h4 This is a content section.
-    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+    .panel{ :style => "background-color: #3ea1b0; color: white;" }
+      %h4{ :style => "color: white;" }
+        Advanced Level
+      %ul
+        %li Big Data
+        %li Hadoop Adminstration (Hadoop Echo System)
+        %li Data Mining
+        %li Network Security
+
+
+%br
+%br
 .row
   .large-12.columns
-    .panel
-      = render 'static_pages/testimonials'
-    .panel
-      %h4 Get in touch!
-      .row
-        .large-9.columns
-          %p We'd love to hear from you.
-        .large-3.columns
-          = link_to "Contact Us ", static_pages_contact_path, class: "button radius right"
+    = render 'static_pages/contact'
+
